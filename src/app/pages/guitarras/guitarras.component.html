@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+    <mat-card-title>Nossas Guitarras</mat-card-title>
+
+    <div class="guitarras-list">
+      <div *ngFor="let guitarra of guitarras" class="guitarra-card">
+        <img mat-card-image [src]="guitarra.imagem" alt="{{ guitarra.nome }}" />
+        <h3>{{ guitarra.nome }}</h3>
+        <p>{{ guitarra.descricao }}</p>
+        <p>{{ guitarra.preco }}</p>
+        <button mat-button (click)="handleCompra(guitarra.nome)" class="btn-comprar" color="primary">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </div>
+    
+</mat-card>

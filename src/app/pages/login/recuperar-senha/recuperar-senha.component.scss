@@ -1,0 +1,43 @@
+.mat-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  min-width: 900px;
+}
+
+.example-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 50px !important;
+} 
+.example-full-width {
+  width: 100%;
+}
+
+.title{
+  margin-top: 30px !important;
+}
+
+.recup-senha{
+  margin-left: 22rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease; /* Adiciona uma transição suave à cor ao passar o mouse */
+}
+
+/* Estilo ao passar o mouse */
+a:hover {
+  cursor: pointer;
+  color: #333; /* Cor mais escura ao passar o mouse */
+}
