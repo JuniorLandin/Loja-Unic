@@ -1,0 +1,36 @@
+<mat-card class="mat-card">
+  <mat-card-title class="title">Acesse a nossa loja</mat-card-title>
+
+  <form class="example-form"  [formControl]="emailFormControl">
+
+      <mat-form-field class="example-full-width" appearance="legacy">
+          <mat-label>Email</mat-label>
+          <input type="name" matInput placeholder="Digite seu Nome">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      
+      <mat-form-field class="example-full-width" appearance="legacy">
+        <mat-label>Senha</mat-label>
+        <input type="email" matInput placeholder="Digite seu Email">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <span class="recup-senha">
+        <a routerLink="/recuperar-senha">Esqueci a senha.</a>
+      </span>
+
+      <span style="margin-top: 20px;">
+        Se ainda não possui cadastro, 
+        <a routerLink="/cadastrar">clique aqui</a>
+      </span>
+    </form>
+</mat-card>
