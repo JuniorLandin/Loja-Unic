@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="container">
     <mat-card-title>Nossas Guitarras</mat-card-title>
 
     <div class="guitarras-list">
@@ -6,8 +6,8 @@
         <img mat-card-image [src]="guitarra.imagem" alt="{{ guitarra.nome }}" />
         <h3>{{ guitarra.nome }}</h3>
         <p>{{ guitarra.descricao }}</p>
-        <p>{{ guitarra.preco }}</p>
-        <button mat-button (click)="handleCompra(guitarra.nome)" class="btn-comprar" color="primary">
+        <p class="preco">{{ guitarra.preco }}</p>
+        <button mat-raised-button (click)="handleCompra(guitarra.nome)" color="primary">
           Adicionar ao carrinho
         </button>
       </div>

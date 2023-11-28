@@ -1,7 +1,37 @@
-.example-card {
-    max-width: 400px;
-}
 
+.guitarras-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+    .guitarra-card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 40px;
+        margin-right: 10px;
+        margin-top: 20px;
+
+        transition: box-shadow 0.6s ease;
+    }
+
+    .guitarra-card:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil ao passar o mouse */
+    }
+
+    h3{
+        font-weight: 500;
+    }
+    .preco{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
 img{
-    width: 100px;
+    width: 200px;
+    height: 140px;
+    border-radius: 12px;
 }

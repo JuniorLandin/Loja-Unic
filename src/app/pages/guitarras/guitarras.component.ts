@@ -12,7 +12,22 @@ export class GuitarrasComponent {
       id: 1,
       nome: 'Guitarra Tagima Tw-55 Telecaster',
       descricao: 'Uma guitarra clássica com um som nítido.',
-      preco: 'R$ 1000,00 no pix com desconto de 5% ou R$ 1100,00 em 12x sem juros',
+      preco: 'R$ 1000,00',
+      imagem: './assets/Telecaster.jpg',
+    },
+    {
+      id: 2,
+      nome: 'Guitarra Tagima Tw-55 Telecaster',
+      descricao: 'Uma guitarra clássica com um som nítido.',
+      preco: 'R$ 1000,00',
+      imagem: './assets/Telecaster.jpg',
+    }
+    ,
+    {
+      id: 2,
+      nome: 'Guitarra Tagima Tw-55 Telecaster',
+      descricao: 'Uma guitarra clássica com um som nítido.',
+      preco: 'R$ 1000,00',
       imagem: './assets/Telecaster.jpg',
     }
   ];
